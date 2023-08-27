@@ -1,0 +1,150 @@
+body{
+
+    margin:0;
+    font-family: sans-serif;
+    background-color: rgb(241, 238, 238);
+    font-size: 17px;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-right: 30px;
+    background-color: rgb(135, 135, 86);
+    padding-bottom: 25px;
+}
+
+header nav a{
+
+    text-decoration: none;
+    padding-left: 25px;
+    color:white;
+}
+
+header nav a:hover{
+    color:goldenrod;
+}
+
+header nav #first{
+
+     color:rgb(17, 17, 21);
+}
+
+
+header nav{
+    padding-top: 14px;
+}
+
+.grid{
+
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.item{
+
+
+    background-color: black;
+    color:white;
+
+}
+
+
+
+
+.item #section-1{
+    height:500px;
+    background-image: url(images/repair.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item #section-1 h1{
+    font-size: 10vw;
+    color:goldenrod;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 200px;
+    text-transform: uppercase;
+}
+
+.item article p{
+
+    padding-top:8px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode',
+     'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+
+.item .aside-1{
+    padding-left: 16px;
+}
+
+
+.item  .aside-1 h2{
+
+        text-align: center;
+        padding-left: 9px;
+}
+
+.item .aside-1 .image-1{
+
+    width:200px;
+    height:200px;
+}
+
+
+footer{
+    background-color: gray;
+    height:100px;
+    width:100%;
+}
+
+footer p{
+    margin:0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+@media screen and (max-width:600px){
+ 
+  body{
+    background-color: black;
+    overflow-x: hidden!important;
+  }
+
+
+
+    header{
+
+        display:block;
+        text-align: center;
+        width: 100% !important;;
+    }
+
+    .grid{
+        display:block;
+        width:100%;
+    }
+
+    .item article p{
+        padding-top: 20px;
+    }
+
+    .item .aside-1 .image-1{
+        width:100%;
+    }
+
+    .item .aside-1{
+        padding-right: 16px;
+    }
+}
